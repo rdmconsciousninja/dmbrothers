@@ -14,12 +14,12 @@ import {
 
 import { LanguageProvider, useLanguage } from "@/lib/i18n";
 
-import officialLogo from "@/assets/DM_LOGO_PNG.png.asset.json";
+import officialLogo from "@/assets/DM_LOGO_PNG.png";
 import yachtPlatform from "@/assets/yacht-platform.jpg";
 import aiFood from "@/assets/ai-food.jpg";
-import bgLoop from "@/assets/DMbackgroundloop.mp4.asset.json";
-import bgPoster from "@/assets/DMbackground.png.asset.json";
-import heroVideo from "@/assets/Hero_video.mp4.asset.json";
+import bgLoop from "@/assets/DMbackgroundloop.mp4";
+import bgPoster from "@/assets/DMbackground.png";
+import heroVideo from "@/assets/Hero_video.mp4";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -57,8 +57,8 @@ function BackgroundVideo() {
     <div className="pointer-events-none fixed inset-0 -z-10 bg-[#0a0a0b]">
       <video
         className="h-full w-full object-cover"
-        src={bgLoop.url}
-        poster={bgPoster.url}
+        src={bgLoop}
+        poster={bgPoster}
         autoPlay
         loop
         muted
@@ -142,7 +142,7 @@ function Nav() {
         <div className="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center px-5 py-3.5 sm:grid-cols-3 sm:px-8">
           <a href="#top" className="flex items-center justify-self-start">
             <img
-              src={officialLogo.url}
+              src={officialLogo}
               alt="The DM Brothers logo"
               width={180}
               height={44}
@@ -194,7 +194,7 @@ function Hero() {
                   <video
                     ref={videoRef}
                     className="absolute inset-0 h-full w-full rounded-2xl object-cover"
-                    src={heroVideo.url}
+                    src={heroVideo}
                     autoPlay
                     muted
                     playsInline
