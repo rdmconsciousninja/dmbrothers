@@ -467,7 +467,7 @@ function Footer() {
         <div className="flex flex-col items-center gap-8 pt-10">
           <div className="flex flex-col items-center gap-4">
             <img
-              src={officialLogo.url}
+              src={officialLogo}
               alt="The DM Brothers logo"
               loading="lazy"
               width={180}
